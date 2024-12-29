@@ -1,12 +1,10 @@
 import Banner from "../../components/Banner"
-import CardHome from "../../components/Card/CardHome"
 import CardInicio from "../../components/Card/CardInicio"
 import Titulo from "../../components/Titulo"
 import corteEstilo from "../Inicio/img/corte.jpeg"
 import tratoCordial from "../Inicio/img/corte1.jpeg"
 import corteEstilo2 from "../Inicio/img/corte2.jpeg"
 import equipo from "../Inicio/img/equipo.jpeg"
-import droneVigilancia from "./droneVigilancia.webp"
 import styles from "./Inicio.module.css"
 function Inicio(){
     return(

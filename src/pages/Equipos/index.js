@@ -1,6 +1,4 @@
 import CardEquipo from "../../components/Card/CardEquipo"
-import ConstructionPage from "../../components/ConstructionPage"
-import DroneConstructionPage from "../../components/PaginaContruccion"
 import Titulo from "../../components/Titulo"
 import styles from "./Reportes.module.css"
 

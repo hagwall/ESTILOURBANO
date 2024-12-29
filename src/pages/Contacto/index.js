@@ -1,8 +1,8 @@
-import Footer from "../../components/Footer"
-import Titulo from "../../components/Titulo"
+
+
 import Ubicacion from "../../components/UbicacionContenedor"
 import styles from "./Contacto.module.css"
-import qr from "./qrcode-generado.png"
+
 
 function Contacto(){
     return (

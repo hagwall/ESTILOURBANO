@@ -1,8 +1,8 @@
 /* ServiciosBarberia.module.css */
 .serviciosContainer {
-    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 2rem;
+    
   }
   
   .filtros {
@@ -43,7 +43,6 @@
     background-color: var(--color-black);
     padding: 1.5rem;
     border-radius: 8px;
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
     box-shadow: 0 13px 23px -12px var(--color-sky);
     transition: transform 0.3s ease;
   }

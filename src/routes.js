@@ -1,4 +1,4 @@
-import Banner from "./components/Banner";
+
 import Cabecera from "./components/Cabecera";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -17,7 +17,7 @@ const {
 
 const AppContent = () => {
   const location = useLocation();
-  const isHomePage = location.pathname === "/";
+  // const isHomePage = location.pathname === "/";
 
   return (
     < div className="contenedor">
