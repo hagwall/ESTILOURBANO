@@ -1,0 +1,16 @@
+.boton{
+    background-color: var(--color-white);
+    border: solid 2px var(--color-blue);
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 10px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    color: var(--color-black);
+}
+
+.boton:hover{
+    border: solid 2px var(--color-sky);
+    color: var(--color-white);
+    background-color: var(--color-sky);
+}

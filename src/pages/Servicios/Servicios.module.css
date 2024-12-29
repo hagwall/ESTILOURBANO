@@ -1,0 +1,14 @@
+.container_card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    
+}
+
+/* .titulo{
+    
+} */
+.prueba{
+    background-color: blue;
+}

@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+    /* background-color: #f3f4f6; */
+  }
+  
+  .card {
+    text-align: center;
+    padding: 2rem;
+    
+    border: solid 2.7px var(--color-blue);
+    box-shadow: 0 25px 50px -12px var(--color-sky);
+    border-radius: 1rem;
+    max-width: 80rem;
+    width: 100%;
+  }
+  
+  .droneWrapper {
+    position: relative;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .drone {
+    width: 15rem;
+    height: 15rem;
+    animation: drone-hover 2.5s infinite ease-in-out;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--color-sky);
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 1.25rem;
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+  }
+  
+  .featuresBox {
+    /* background-color: #EFF6FF; */
+    border: solid 2.7px var(--color-blue);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .featuresTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-sky);
+    margin-bottom: 1rem;
+  }
+  
+  .featuresList {
+    color: var(--color-white);
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+  
+  .featuresList li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .actionWrapper {
+    margin-top: 2rem;
+  }
+  
+  .backButton {
+    background-color: #2563EB;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s;
+  }
+  
+  .backButton:hover {
+    background-color: #1D4ED8;
+  }
+  
+  @keyframes drone-hover {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+  }

@@ -1,0 +1,10 @@
+.containerCard{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    /* margin-top: 20px; */
+}
+.prueba{
+    height: 5rem;
+    
+}

@@ -1,0 +1,36 @@
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.4rem;
+    height: 30rem;
+    background-image: url(banner.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: space;
+    border-image: fill 0 linear-gradient(#0003 45%, #000);
+    
+
+}
+
+
+
+.container_description{
+    width: 40%;
+    color: var(--color-white);
+    font-size: 1.7rem;
+    text-shadow: 0 0 10px var(--color-black),
+                    0 0 20px var(--color-black),
+                    0 0 40px var(--color-black),
+                    0 0 80px var(--color-black);
+}
+
+@media (max-width: 768px){
+    .banner{
+        height: 20rem;
+
+    }
+    .container_description{
+        font-size: 1rem;
+    }
+}

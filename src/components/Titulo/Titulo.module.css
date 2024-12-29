@@ -1,0 +1,11 @@
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--color-red);
+    /* border-bottom: 2px solid red;
+    width: fit-content; */
+    text-decoration: underline;
+}

@@ -1,0 +1,121 @@
+/* ServiciosBarberia.module.css */
+.serviciosContainer {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .filtros {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .filtroBtn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    color: var(--color-white);
+  }
+  
+  .filtroBtn:hover {
+    color: var(--color-sky);
+  }
+  
+  .filtroBtn.activo {
+    color: var(--color-red);
+    border-bottom-color: var(--color-red);
+  }
+  
+  .serviciosGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4rem;
+  }
+  
+  .servicioCard {
+    background-color: var(--color-black);
+    padding: 1.5rem;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 13px 23px -12px var(--color-sky);
+    transition: transform 0.3s ease;
+  }
+  
+  .servicioCard:hover {
+    transform: translateY(-5px);
+  }
+
+  .serviciosImagenContainer{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .servicioImagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .servicioCard:hover .servicioImagen{
+    transform: scale(1.05);
+  }
+  
+  .servicioContenido{
+    padding: 1.5rem;
+  }
+
+  .servicioTitulo {
+    font-size: 1.3rem;
+    color: var(--color-white);
+    margin-bottom: 0.5rem;
+  }
+  
+  .servicioDescripcion {
+    color: var(--color-lead);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-size: 1.2rem;
+  }
+  
+  .servicioDetalles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+  }
+  
+  .servicioPrecio {
+    font-weight: bold;
+    color: var(--color-red);
+    font-size: 1.2rem;
+  }
+  
+  .servicioDuracion {
+    color: var(--color-lead);
+  }
+  
+  @media (max-width: 768px) {
+    .filtros {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .serviciosGrid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .serviciosImagenContainer{
+      height: 180px;
+    }
+  }

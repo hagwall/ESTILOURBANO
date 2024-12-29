@@ -1,0 +1,157 @@
+/* Ubicacion.module.css */
+.contactContainer {
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .mapaContainer {
+    flex: 0 0 65%;
+    position: relative;
+  }
+
+  .mapa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .infoContainer{
+    flex: 0 0 35%;
+    padding: 0 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .titulo {
+    color: var(--color-white);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #a67c52;
+    padding-bottom: 0.5rem;
+  }
+  
+  .descripcion {
+    color: var(--color-lead);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  
+  .contactInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .qrContainer{
+    text-align: center;
+  }
+
+  .qrCode{
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+  }
+
+  .qrText{
+    margin-top: 0.5rem;
+    color: var(--color-lead);
+    font-size: 1rem;
+  }
+
+  .horariosDireccion{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .horarios, .direccion{
+    flex: 1;
+  }
+
+  .horarios h3, .direccion h3{
+    color: var(--color-white);
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+  }
+
+  .horarios p, .direccion p{
+    color: var(--color-lead);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .redesSociales{
+    margin-top: auto;
+    text-align: center;
+  }
+
+  .redesSociales h3{
+    color: var(--color-lead);
+    margin-bottom: 1rem;
+  }
+
+  .redesIconos{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .redSocial{
+    color: var(--color-red);
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+  }
+
+  .redSocial:hover{
+    color: var(--color-lead);
+  }
+ 
+  @media (max-width: 1024px) {
+    .contactContainer {
+      flex-direction: column;
+    }
+  
+    .mapaContainer,
+    .infoContainer {
+      flex: none;
+      width: 100%;
+    }
+  
+    .mapaContainer {
+      height: 400px;
+    }
+  
+    .infoContainer {
+      min-height: 500px;
+    }
+  
+    .horariosDireccion {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mapaContainer {
+      height: 300px;
+    }
+  
+    .titulo {
+      font-size: 1.8rem;
+    }
+  
+    .qrCode {
+      width: 120px;
+      height: 120px;
+    }
+  }

@@ -1,0 +1,112 @@
+.card{
+    /* --white: hsl(0, 0%, 100%);
+    --black: hsl(240, 15%, 9%);
+    --paragraph: hsl(0, 0%, 83%);
+    --line: hsl(240, 9%, 17%);
+    --primary: hsl(189, 92%, 58%); */
+    /* background-color: hsla(240, 15%, 9%, 1); */
+    border: solid 2.7px var(--color-blue);
+    box-shadow: 0 25px 50px -12px var(--color-sky);
+    width: 19rem;
+    border-radius: 1rem;
+    /* box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem;
+    
+}
+.card .card_border{
+    overflow: hidden;
+    pointer-events: none;
+  
+    position: absolute;
+    z-index: -10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    /* background-image: linear-gradient(
+      0deg,
+      hsl(0, 0%, 100%) -50%,
+      hsl(0, 0%, 40%) 100%
+    ); */
+  
+    border-radius: 1rem;
+}
+
+.card .card_border::before {
+    content: "";
+    pointer-events: none;
+  
+    position: fixed;
+    z-index: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%), rotate(0deg);
+    transform-origin: left;
+  
+    width: 200%;
+    height: 10rem;
+    /* background-image: linear-gradient(
+      0deg,
+      hsla(0, 0%, 100%, 0) 0%,
+      hsl(189, 100%, 50%) 40%,
+      hsl(189, 100%, 50%) 60%,
+      hsla(0, 0%, 40%, 0) 100%
+    ); */
+  
+    animation: rotate 3s linear infinite;
+  }
+
+.card .line{
+    width: 100%;
+    /* height: 0.1rem; */
+    /* background-color: var(--color-blue); */
+    border-color: var(--color-sky);
+    
+}
+
+.container_boton{
+    /* display: flex; */
+    align-self: center;
+}
+@keyframes rotate {
+    to{
+        transform: rotate(360deg);
+    }
+}
+.card h2{
+    text-align-last: center;
+    color: var(--color-sky);
+    font-size: 1rem;
+}
+
+.card .card_lista{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    gap: 0.5rem;
+    
+    
+}
+ .card .card_lista ul{
+    
+        list-style: none;
+        padding-left: 0;
+        margin-left: 0;
+    
+ }
+
+.card .card_lista .card_lista_item{
+    display: flex;
+    /* align-items: flex-start; */
+    gap: 0.8rem;
+    color: var(--color-white);
+    padding: 7px;
+}
+

@@ -1,0 +1,77 @@
+.cabecera{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid 2px var(--color-red);
+    background-color: var(--color-blue-dark);
+  
+}
+
+.logoDrone{
+    height: 130px;
+}
+
+.logoDrone img{
+    width: 170px;
+    height: 115px;
+    
+}
+
+/* .cabecera {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+  } */
+  
+  /* Estilo por defecto para la cabecera en la página de inicio 
+  .cabecera:not(.cabecera-scrolled):not(.cabecera-other-page) {
+    background-color: transparent;
+    color: #ffffff; /* Color del texto para la cabecera transparente 
+  }
+  
+  /* Estilo para la cabecera cuando se hace scroll en la página de inicio 
+  .cabecera.cabecera-scrolled {
+    background-color: #ffffff; /* O el color que prefieras 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #333333; /* Color del texto para la cabecera con fondo 
+  }*/
+  
+  /* Estilo para la cabecera en otras páginas 
+  .cabecera.cabecera-other-page {
+    background-color: #ffffff; /* O el color que prefieras para otras páginas 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #333333; /* Color del texto para otras páginas 
+  }*/
+  
+  /* Estilos para los elementos dentro de la cabecera */
+  /* .cabecera_logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .cabecera_nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .cabecera-nav-item {
+    margin-left: 20px;
+    text-decoration: none;
+    color: inherit;
+  } */
+  
+  /* Ajustes para dispositivos móviles 
+  @media (max-width: 768px) {
+    .cabecera {
+      padding: 10px 0;
+    }
+  
+    .cabecera_nav {
+      display: none; /* O implementa un menú hamburguesa para móviles 
+    }
+  }*/
